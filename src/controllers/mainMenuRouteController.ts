@@ -38,4 +38,10 @@ export const start = async (req: Request, res: Response): Promise<void> => {
 					<PageResponse>{ errorMessage: error.message });
 			}
 		});
+	//Add the funcinality so that only one user can use it at a time
+	//If an active user is present
+		//add error messages from the query to the view
+		//Serve up the main menue document
+	//else
+		//redirect to the sign in page with the error message
 };
